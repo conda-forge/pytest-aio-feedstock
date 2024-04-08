@@ -1,13 +1,13 @@
 {% set name = "pytest-aio" %}
-{% set version = "1.5.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-aio-{{ version }}.tar.gz
-  sha256: a00d0378adac57d6c24841b8d898aa083a4cb2ae5f94a339f5f0c8b1b5d16677
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 97dcbc1c5ac991705f32bb2cf72f9ba94a8889fd0295d29ed4d7252b3e158684
 
 build:
   noarch: python
